@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة المواعيد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <section class="card">
+    <h1>لوحة إدارة العيادة</h1>
+    <div id="loginBox">
+      <input id="email" type="email" placeholder="البريد الإلكتروني">
+      <input id="password" type="password" placeholder="كلمة المرور">
+      <button id="loginBtn">تسجيل الدخول</button>
+      <p id="loginMessage"></p>
+    </div>
+    <div id="dashboard" hidden>
+      <div class="toolbar">
+        <button id="refreshBtn">تحديث</button>
+        <button id="logoutBtn" class="secondary">تسجيل الخروج</button>
+      </div>
+      <div id="appointments"></div>
+    </div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

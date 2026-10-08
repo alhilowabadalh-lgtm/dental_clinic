@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عيادة الأسنان - حجز موعد</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>🦷 عيادة الأسنان</h1>
+      <p class="muted">احجز موعدك بسهولة</p>
+      <form id="bookingForm">
+        <label>الاسم الكامل</label>
+        <input id="name" required placeholder="اكتب اسمك">
+        <label>رقم الهاتف</label>
+        <input id="phone" required type="tel" placeholder="07xxxxxxxx">
+        <label>التاريخ</label>
+        <input id="date" required type="date">
+        <label>الوقت</label>
+        <input id="time" required type="time">
+        <label>نوع الخدمة</label>
+        <select id="service" required>
+          <option value="">اختر الخدمة</option>
+          <option>فحص أسنان</option>
+          <option>تنظيف أسنان</option>
+          <option>حشوة</option>
+          <option>خلع</option>
+          <option>تبييض</option>
+          <option>أخرى</option>
+        </select>
+        <label>ملاحظات</label>
+        <textarea id="notes" rows="3" placeholder="اختياري"></textarea>
+        <button type="submit">حجز الموعد</button>
+      </form>
+      <p id="message"></p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
