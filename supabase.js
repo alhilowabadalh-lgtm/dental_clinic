@@ -1,6 +1,6 @@
 // ضع بيانات مشروع Supabase هنا
 const SUPABASE_URL = "https://maexfqpoxcbxzsmutzbv.supabase.co";
-const SUPABASE_ANON_KEY = "ضع_مفتاح_النشر_anon_key_هنا";
+const SUPABASE_ANON_KEY = "sb_publishable_NbAQlh4KjU4eyeFPinTYcA_RV0mAduF";
 
 // لا تضع service_role key في ملفات الموقع.
 
